@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cemilan Nagih | Beranda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .navbar-brand {
+            font-weight: 600;
+            color: #d63384 !important;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1599490659213-e2b9527bb087?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .card-snack {
+            transition: transform 0.3s;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .card-snack:hover {
+            transform: translateY(-10px);
+        }
+        .btn-order {
+            background-color: #d63384;
+            color: white;
+            border-radius: 25px;
+        }
+        .btn-order:hover {
+            background-color: #b02a6b;
+            color: white;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">🍿 Cemilan Nagih</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tentang">Tentang Kami</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Sekali Gigit, Langsung Nagih!</h1>
+            <p class="lead">Temukan berbagai varian cemilan hits dengan rasa yang tak terlupakan.</p>
+            <a href="#produk" class="btn btn-order btn-lg px-4 mt-3">Lihat Menu</a>
+        </div>
+    </header>
+
+    <section id="produk" class="container my-5">
+        <h2 class="text-center mb-5 fw-bold">Menu Terpopuler</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card card-snack h-100">
+                    <img src="https://images.unsplash.com/photo-1599490659213-e2b9527bb087?auto=format&fit=crop&q=60&w=500" class="card-img-top" alt="Makaroni">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Makaroni Pedas Level</h5>
+                        <p class="card-text text-muted">Renyah, gurih, dengan bumbu rahasia yang bikin melek.</p>
+                        <p class="fw-bold text-danger">Rp 15.000</p>
+                        <button class="btn btn-outline-danger btn-sm">Beli Sekarang</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-snack h-100">
+                    <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?auto=format&fit=crop&q=60&w=500" class="card-img-top" alt="Basreng">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Basreng Daun Jeruk</h5>
+                        <p class="card-text text-muted">Bakso goreng premium dengan aroma jeruk yang segar.</p>
+                        <p class="fw-bold text-danger">Rp 18.000</p>
+                        <button class="btn btn-outline-danger btn-sm">Beli Sekarang</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card card-snack h-100">
+                    <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&q=60&w=500" class="card-img-top" alt="Cookies">
+                    <div class="card-body text-center">
+                        <h5 class="card-title fw-bold">Cookies Cokelat Lumer</h5>
+                        <p class="card-text text-muted">Manisnya pas, cokelatnya melimpah di setiap gigitan.</p>
+                        <p class="fw-bold text-danger">Rp 25.000</p>
+                        <button class="btn btn-outline-danger btn-sm">Beli Sekarang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Cemilan Nagih - Nikmatnya Tiada Dua.</p>
+            <small>Dibuat dengan ❤️ untuk pecinta ngemil</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
